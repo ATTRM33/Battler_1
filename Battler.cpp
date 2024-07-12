@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <ctime>
+#include <string>
 #include "Die.h"
 #include "Attribute.h"
 
@@ -16,6 +17,7 @@ int main() {
 	Die Die1;
 	Die Die2;
 	Die Die3;
+	
 
 	
 

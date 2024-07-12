@@ -9,6 +9,9 @@ class Attribute
 	int currentScore;
 public:
 	Attribute();
+	Attribute(string n);
+	Attribute(string n, int value);
+
 	string getName();
 	string setName(string name);
 	int getSCore();

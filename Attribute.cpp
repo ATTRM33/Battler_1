@@ -15,6 +15,23 @@ Attribute::Attribute()
 
 	currentScore = baseScore;
 };
+Attribute::Attribute(string n) {
+	name = n;
+	Die die;
+
+	for (int i = 0; i < 3; i++) {
+
+		baseScore += die.getFaceValue();
+	}
+
+	currentScore = baseScore;
+};
+
+Attribute::Attribute(string n, int value) {
+	name = n;
+	baseScore = value;
+	currentScore = baseScore;
+};
 
 string Attribute::getName() {
 	return name;
@@ -29,6 +46,7 @@ void Attribute::modifyScore(int mod) {
 	currentScore += mod;
 }
 int Attribute::getModifier() {
+
 	return (currentScore-10)/2;
 }
 void Attribute::resetCurrentScore() {

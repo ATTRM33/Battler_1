@@ -18,6 +18,7 @@ SIDES(sides) {
 	roll();
 }
 
+
 void Die::roll() {
 	faceValue = rand() % SIDES + 1;
 }
