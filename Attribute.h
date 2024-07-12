@@ -2,6 +2,9 @@
 #ifndef ATTRIBUTE_H
 #define ATTRIBUTE_H
 
+#include <string>
+using namespace std;
+
 class Attribute
 {private:
 	string name;
@@ -13,7 +16,7 @@ public:
 	Attribute(string n, int value);
 
 	string getName();
-	string setName(string name);
+	void setName(string name);
 	int getSCore();
 	void modifyScore(int mod);
 	int getModifier();

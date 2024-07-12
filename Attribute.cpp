@@ -36,7 +36,7 @@ Attribute::Attribute(string n, int value) {
 string Attribute::getName() {
 	return name;
 }
-string Attribute::setName(string n) {
+void Attribute::setName(string n) {
 	name = n;
 }
 int Attribute::getSCore() {
